@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family= Open+Sans & display=swap" rel= "feuille de style">
+    
+    <title>A propos</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo"> Teacher</h1>
+        <nav >
+            <ul class="navbar">
+                <a href="index.html"><li  id="first">Presentation</li></a>
+                <a href="cours.html" id=""><li>Cours</li></a>
+                <a href="Contact.html" id=""><li>Contact</li></a>
+                <a href="apropos.html" id=""><li>A propos</li></a>
+            </ul>
+        </nav>
+    </header>
+    <a href="#logo"><img src="img\push.jpg" alt="image pour remonter" id="push"></a>
+
+
+    <section class="banniere" id="acceuil">
+        <h2>Prendre Contact Avec Moi?</h2>
+       <a href="#contact"> <button class="btn1">Voir plus</button></a>
+        <a href="mailto:stevnouyep@gmail.com"><button class="btn2">Contactez Moi!</button></a>
+   
+    </section>
+
+
+
+    <section class="formulaire" id="contact">
+        <h2>ContactezMoi!</h2>
+        <form action="traitement" method="POST">
+          <legend>Entrer vos informations ici! </legend>
+          <!-- <br>  <label for="nom">*Nom</label> <br> -->
+            <input type="text" id="nom" name="nom" placeholder="*Votre Nom"> <br>
+            <!-- <label for="prenom">*prenom</label> <br> -->
+            <input type="text" id="prenom" name="prenom" placeholder="*Votre prenom"> <br>
+            <!-- <label for="email">*email</label> <br> -->
+            <input type="email" id="email" name="email" placeholder="*Votre email"> <br>
+            <!-- <label for="tel">*Telephone</label> <br> -->
+            <input type="tel" id="tel" name="telephone" placeholder="*Votre telephone"> <br>
+            <!-- <label for="message">*message</label> <br> -->
+            <textarea name="message" id="message" cols="30" rows="10">*Message</textarea> 
+            <input type="submit" value="Envoyez" class="btn1">
+        </form>
+    </section>
+    
+
+    
+    <footer>
+        <h1 id="logo"> Teacher</h1>
+        <p>Copyright &copy Steve Nouyep 2017</p> <br>
+        <!-- <button class="btn1">Lire la suite</button> -->
+
+        <div class="block">
+            <img src="img\icon-facebook.svg" alt="">
+            <img src="img\icon-instagram.svg" alt="">
+            <img src="img\icon-twitter.svg" alt="">
+            <img src="img\icon-youtube.svg" alt=""> <br>
+            <p style="padding: 5px 10px; margin-right: 20px;">Cmr yde:+237 66x78xx56</p>
+        </div>
+    </footer>
+</body>
+</html>

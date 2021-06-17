@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+header{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 90%;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline;
+    float: left;
+    margin: -7px 20px 20px 20px;
+}
+#blue{
+    color: blue;
+}
+#rouge{
+    color: red;
+}
+#jaune{
+    color: yellow;
+}
+#vert{
+    color: green;
+}
+
+.search button{
+    width: 53%;
+    height: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    float: left;
+    font-weight: bold;
+    display: inline;
+    
+}
+.search img{
+    width: 15px;
+    height: 15px;
+    transform: translateX(-30px);
+    margin-bottom: 4px;
+
+}
+.widget img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.widget{
+    
+    float: right;
+    margin: -50px 50px 0px 0px;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    color: black;
+}
+.setting a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    color: black;
+}
+.navbar{margin-left: 130px;}
+.down{
+    display: flex;
+}
+.setting{
+    margin-left: 330px;
+}
+.down a:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+    cursor: pointer;
+}
+header + p{
+    margin-left: 150px;
+    font-size: 1rem; color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-17px);
+}
+.texte h1{
+    font-size: 1.2rem;
+    color: blue;
+    letter-spacing: 1px;
+}
+.texte h3{
+    color: green;
+    font-size: 1rem;
+
+}
+.texte p{
+    font-size: 0.9rem;
+    color: black;
+}
+.texte{line-height: 1px;
+    margin: 10px 10px 40px 150px;
+    
+}

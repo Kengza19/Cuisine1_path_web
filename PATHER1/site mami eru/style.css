@@ -1,0 +1,685 @@
+html{scroll-behavior: smooth;}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    
+
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+header a{
+    text-decoration: none;
+    margin :10px;
+    font-weight: 700px;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li {
+    list-style: none;
+    /* margin: 10px; */
+}
+.logo{
+    color: rgb(243, 33, 121);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span , .anime{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: gaza ;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+.navbar a li {
+    color: #2a4961;
+    font-weight: bold;
+}
+.navbar a:hover{
+    border-bottom: 2px solid rgb(243, 33, 121);
+    color: rgb(243, 33, 121);
+    font-weight: bold;
+    transition: color 1s ease, border-bottom 0.5s ease, font-weight 0.5 ease;
+}
+header .btn_header{
+    color: white;
+    background-color: rgba(243, 33, 121,0.6);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 2px ;
+}
+header .btn_header:hover{
+    background-color: rgba(243, 33, 121,0.5);
+}
+.banniere{
+margin: 0px;
+font-family: 'poppins',sans-serif;
+padding: 100px;
+position: relative;
+min-height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url('plat5.jpg');
+background-size: cover;
+}
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+.banniere .contenu h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #2a4961;
+    padding: 5px;
+
+}
+.contenu p{
+    font-size: 1.2rem;
+}
+.contenu .btn1{
+    font-size: 1em;
+    color: #fff;
+    background:rgba(243, 33, 121,0.6);
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.contenu .btn2{
+    font-size: 1em;
+    color: #fff;
+    background:#2a4961;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.contenu .btn1:hover{
+    letter-spacing: 5px;
+}
+/*                      code pour la section  A  Props                          */
+.apropos{
+    margin-top: 20px;
+    padding: 100px;
+    justify-content: center;
+}
+
+.apropos .contenu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.apropos .contenu_gauche{
+    position: relative;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.apropos .contenu_gauche h2{
+    color: #2a4961;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.apropos .contenu_gauche p{
+    justify-content: justify;
+    margin-bottom: 40px;
+}
+.apropos .contenu_droit{
+    position:relative;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.apropos .contenu_droit img{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(243, 33, 121,0.3);
+     /* animation-name: chgt_images ;
+     animation-duration: 5s;
+     animation-timing-function: ease-in-out;
+     animation-direction: alternate-reverse;
+     animation-iteration-count: 2; */
+
+}
+.apropos .contenu_droit img:hover{
+    cursor: pointer;
+    animation-name: chgt_images ;
+    animation-duration: 0.5s;
+    /* animation-timing-function:; */
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: 3;
+
+}
+/*                    section menu                        */
+.menu{
+    padding: 10px;
+    /* background-color: #233f55; */
+    background-color: rgba(54, 67, 78,0.6);
+}
+.menu h2 ,.patisserie h2{
+    text-align: center;
+    color: #2a4961;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    margin-bottom: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+.gallery .box{
+    /* position: relative; */
+    /* border :1px solid black; */
+    height:400px ;
+    width:300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.5);
+    margin: 20px;
+    transition: margin-top 0.4s;
+}
+.gallery .box:hover{
+    margin-top: -10px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.8);
+    cursor: pointer;
+    /* transition: margin-top 0.4s; */
+}
+
+.gallery .box_img{
+    position: relative;
+    height: 350px;
+    width: 300px;
+    
+
+    /* border: 1px solid red; */
+  
+}
+.gallery .box_img img{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery .box_img p{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(243, 33, 121,0.6);
+    color: white;
+    padding: 5px;
+    transform: translateY(-17px);
+
+}
+.gallery .box .box_texte{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: none;
+}
+.gallery .box .box_texte h3{
+    color: #2a4961;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.gallery .box .box_texte .btn_commander{
+    padding: 5px 10px;
+    border: none;
+    background-color: rgba(243, 33, 121,0.6);
+    color: white;
+    border-radius: 50px;
+}
+.gallery .box .box_texte .btn_commander:hover{
+    letter-spacing: 2px;
+    background-color: rgba(243, 33, 121,1);
+    font-weight: 700;
+    cursor: pointer;
+    transition: letter-spacing 0.5s;
+}
+.menu .titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.menu .readmore{
+    margin-top: 20px;
+   
+     /* text-align: center; */
+     font-size:20px;
+     width: 12rem;
+     height: 50px;
+     padding: 10px 20px;
+     background-color: rgba(243, 33, 121,0.6);
+     color: white;
+     border-style: none;
+     border-radius: 50px;
+     transition: letter-spacing 0.5s , background-color 0.5s;
+}
+.menu .readmore:hover{
+    letter-spacing: 2px;
+    background-color: rgb(243, 33, 121);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*                                 ici c est la patisserie                 */
+
+.patisserie{
+    padding: 20px;
+}
+.patisserie .gallery2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.gallery2 .box{
+    width: 290px;
+    height: 400px;
+    position: relative;
+    border: 10px solid white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0,0.8);
+    padding: 10px;
+    margin: 25px;
+
+}
+
+.gallery2 .box:hover .box_img img{
+    /* color: rgba(0, 0, 0,0.5); */
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 0.9;
+}
+
+.gallery2 .box .box_img{
+    position: relative;
+    width: 290px;
+    height: 350px;
+}
+.gallery2 .box .box_img img{
+    width: 290px;
+    height: 350px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 7px;
+    transform: translateY(-20px);
+}
+.gallery2 .box h3{
+  padding: 5px 10px;
+  background-color: #2a4961;
+  color: #fff;
+  text-align: center;
+  transform: translateY(-10px);
+}
+
+.gallery2 .box .box_texte{
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery2 .box .box_texte p{
+    background-color: #2a4961;
+    color: white;
+    padding: 5px 10px;
+}
+
+.gallery2 .box .box_texte .btn_commander{
+    padding: 5px 10px;
+    border: none;
+    background-color: rgba(243, 33, 121,0.6);
+    color: white;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.gallery2 .box .box_texte .btn_commander:hover{
+    letter-spacing: 2px;
+    background-color: rgba(243, 33, 121,1);
+    font-weight: 700;
+    cursor: pointer;
+    transition: letter-spacing 0.5s;
+
+}
+.patisserie .titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.patisserie .titre .readmore{
+    border: none;
+    border-radius: 50px;
+    height: 42px;
+    width: 200px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+}
+
+/*                 ici il s'agite de la section nos experts                 */
+
+.expert{
+    margin: 20px;
+}
+.gallery2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.gallery2 .contenu{
+    width: 240px;
+    height: 290px;
+    position: relative;
+    background-color: black;
+    margin: 20px;
+}
+.expert h2{
+    color:#2a4961;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#wrapper{
+    position: absolute;
+    width: 240px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0,0.8);
+}
+.gallery2 .contenu .texte{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    visibility: visible;
+    /* margin: 20px; */
+}
+.gallery2 .contenu .para{
+    position: absolute;
+    top: 0%;
+    font-weight: 700;
+    color: black;
+    padding: 5px 10px;
+    justify-content: center;
+    margin-left: 50px;
+}
+.gallery2 .contenu .texte img{
+    /* position: absolute;*/
+    border-radius: 50%; 
+    padding: 2px 5px;
+    /* margin: 2px; */
+    visibility: visible;
+}
+.expert h2+p{
+    text-align: center;
+    padding: 10px 20px;
+    color: #2a4961;
+    font-weight: 700;
+}
+
+/*                    iici nous passoons a la sections Temoignages                */
+.temoignage{
+    /* margin: 20px; */
+    background: url('l1.jpg');
+    background-size: cover;
+}
+
+.temoin_gallery{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.temoin{
+    width: 240px;
+    height: 290px;
+    position: relative;
+    margin: 20px;
+    box-shadow: 0px 0px 15px rgba(243, 33, 121,0.6);
+    background-color: rgba(0, 0, 0,0.9);
+}
+.temoin_img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.temoin_img img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    transform: translateX(40px);
+}
+.temoin_img img:hover{
+    object-fit: cover;
+    transition: object-fit 0.5s;
+    cursor: pointer;
+    color: rgba(0, 0, 0,0.8);
+}
+
+
+}
+.temoin_texte{
+    position: relative;
+    padding: 10px 20px;
+    text-align: justify;
+    
+}
+.temoignage h2{
+    color:#2a4961;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2a4961;
+}
+form{
+    position: relative;
+    width: 150px;
+    padding: 10px;
+}
+.contact h3 {
+   
+    color:#fff;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.inputborder{
+    position: relative;
+    width: 120px;
+    border-bottom: 2px solid rgba(243, 33, 121,1);
+    margin: 20px;
+   
+}
+form input{
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: #2a4961;
+    
+
+    border-bottom: 3px  solid rgba(243, 33, 121,0.6);
+    outline: none;
+    /* box-shadow: 0px 0px 15px rgba(243, 33, 121,0.6); */
+}
+.picture{
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+    background: url('l1.jpg');
+    background-size: cover;
+    animation-name: chgtback;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+   
+   
+}
+footer h3{
+    text-align: center;
+    font-weight: 700;
+    color: rgba(243, 33, 121,1);
+    /* position: absolute; */
+}
+.infos{
+    margin: 20px;
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a4961;
+}
+
+.infos img{margin: 10px;}
+#submit{
+   width: 120px;
+   padding: 10px 20px;
+   border-radius: 50px;
+   background-color: rgba(243, 33, 121,0.7);
+   color: #fff;
+   margin-left: -160px;
+   transform: translateY(-120px);
+}
+
+
+
+/* #2a4961; */
+
+@keyframes chgtback{
+    25%{
+        background: url('l2.jpg');
+    }
+    50%{
+        background: url('expert2.jpg');
+    }
+    75%{
+        background: url('plat5.jpg');
+    }
+    
+
+}
+@keyframes gaza{
+    0%{
+        color: rgb(243, 33, 121);
+
+    }
+    25%{
+        color:rgba(0, 0, 0,0.5);
+    }
+    50%{
+        color:rgb(88, 151, 36);
+    }
+    75%{
+        color:rgb(123,00, 121);
+    }
+    100%{
+        color:rgb(255, 255, 255);
+    }
+}
+@keyframes chgt_images {
+    25%{
+        margin-top:-20px;
+    }
+    50%{
+        margin-top:normal;   
+
+}
+}
+
+
+@media screen (and max-width: 580px ){
+
+}

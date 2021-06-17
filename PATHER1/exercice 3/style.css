@@ -1,0 +1,36 @@
+.touches_piano{
+
+    border-radius: 10px;
+    /* border: 80px 25px 20px 25px solid rgb(65, 97, 23); */
+    border-top: 80px solid rgb(65, 97, 23);
+    border-left:25px solid rgb(65, 97, 23) ;
+    border-right: 25px solid rgb(65, 97, 23);
+    border-bottom: 20px solid rgb(65, 97, 23);
+    display: inline-block;
+   
+}
+
+.touches_piano .bouton_droit , .touches_piano .bouton_simple {
+    border-radius:1px;
+    border: 2px solid black ;
+    position: relative;
+    height: 240px;
+    width: 30px;
+    display: inline-block;
+    margin-left: -4px;
+    border-radius: 300px solid black;
+}
+.droit{
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+    height: 140px;
+    width: 25px;
+    transform: translateX(20px);
+    /* transform: translateY(2px); */
+    margin-top: -2px;
+    display: inline-block;
+    
+}
+
+
